@@ -32,7 +32,7 @@ GitHub Repository: [My Video App](https://github.com/ebenezersakyi/movie-app-gi-
 
    ```sh
    git clone https://github.com/ebenezersakyi/movie-app-gi-kace.git
-   cd my-video-app
+   cd movie-app-gi-kace
    ```
 
 2. **Install dependencies:**
