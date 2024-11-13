@@ -5,7 +5,7 @@ import Card from "../../components/Common/Card";
 import { MovieType } from "../../types";
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import { FavoriteMoviesProvider } from "@/contexts/DataContext";
+import { FavoriteMoviesProvider } from "@/contexts/FavoriteMoviesContext";
 
 interface HomePageProps {
   movies: MovieType[];
