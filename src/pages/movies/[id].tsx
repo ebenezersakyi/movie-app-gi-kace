@@ -31,11 +31,11 @@ const MovieDetail = ({ movie, similarMovies }: MoviesPageProps) => {
       icon: <GoShare size={17} color="white" />,
       function: () => setShowShareModal(true),
     },
-    {
-      name: "Download",
-      icon: <GoDownload size={17} color="white" />,
-      function: () => downloadAudio(),
-    },
+    // {
+    //   name: "Download",
+    //   icon: <GoDownload size={17} color="white" />,
+    //   function: () => downloadAudio(),
+    // },
   ];
 
   useEffect(() => {
