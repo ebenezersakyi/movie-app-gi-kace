@@ -5,6 +5,7 @@ import Card from "../../components/Common/Card";
 import { MovieType } from "../../types";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import { FavoriteMoviesProvider } from "@/contexts/DataContext";
 
 interface HomePageProps {
   movies: MovieType[];
@@ -29,23 +30,25 @@ const HomePage = ({ movies }: HomePageProps) => {
   }, [movies]);
 
   return (
-    <Layout>
-      <Head>
-        <title>Eben&apos;s movie app</title>
-        <meta
-          name="description"
-          content="A Next.js movie app using the TMDB API, featuring popular movies, a detail page, and search functionality. Created for a frontend assessment."
-        />
-      </Head>
-      {bannerMovies.length > 0 && <Banner movies={bannerMovies} />}
-      <div className="relative p-[20px]">
-        <div className="flex flex-wrap gap-4 justify-center">
-          {movies.map((movie) => (
-            <Card key={movie.id} movie={movie} />
-          ))}
+    <FavoriteMoviesProvider>
+      <Layout>
+        <Head>
+          <title>Eben&apos;s movie app</title>
+          <meta
+            name="description"
+            content="A Next.js movie app using the TMDB API, featuring popular movies, a detail page, and search functionality. Created for a frontend assessment."
+          />
+        </Head>
+        {bannerMovies.length > 0 && <Banner movies={bannerMovies} />}
+        <div className="relative p-[20px]">
+          <div className="flex flex-wrap gap-4 justify-center">
+            {movies.map((movie) => (
+              <Card key={movie.id} movie={movie} />
+            ))}
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </FavoriteMoviesProvider>
   );
 };
 
