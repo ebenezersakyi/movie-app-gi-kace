@@ -16,7 +16,7 @@ Welcome to the My Video App repository! This project is a Next.js application us
 
 The application is deployed on Vercel. You can access it [here](https://movie-app-gi-kace.vercel.app/).
 
-GitHub Repository: [My Video App](https://github.com/ebenezersakyi/movie-app.git)
+GitHub Repository: [My Video App](https://github.com/ebenezersakyi/movie-app-gi-kace.git)
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ GitHub Repository: [My Video App](https://github.com/ebenezersakyi/movie-app.git
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/ebenezersakyi/movie-app.git
+   git clone https://github.com/ebenezersakyi/movie-app-gi-kace.git
    cd my-video-app
    ```
 
@@ -69,7 +69,6 @@ GitHub Repository: [My Video App](https://github.com/ebenezersakyi/movie-app.git
 
 ### Trade-offs
 
-- **Learning Curve:** Tailwind CSS has a steeper learning curve compared to plain CSS, but it significantly sped up the styling process once I got the hang of it.
 - **Performance:** Server-side rendering to improve SEO and initial load performance, but this comes with the cost of increased server load.
 
 ## Additional Features
